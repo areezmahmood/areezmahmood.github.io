@@ -7,6 +7,7 @@
 <meta name="description" content="Areez Mahmood is a full-stack and mobile app developer specializing in MERN stack, TypeScript, React Native, AWS Lambda, PostgreSQL, and Stripe/PayPal payment integrations. Hire me on Fiverr to build your SaaS platform, mobile app, or payment system.">
 <meta name="keywords" content="full-stack developer, MERN stack developer, React Native developer, hire freelance developer, SaaS developer, Stripe integration, TypeScript developer, mobile app developer, Fiverr developer">
 <meta name="author" content="Areez Mahmood">
+<meta name="google-site-verification" content="FPAK9v4V3aoILFPQBxGg7QGC6ONrUueN90u9yT1JaJk">
 <link rel="canonical" href="https://areezmahmood.github.io/">
 <meta property="og:type" content="website">
 <meta property="og:title" content="Areez Mahmood — Full-Stack & Mobile App Developer">
@@ -16,8 +17,8 @@
 <meta name="twitter:card" content="summary_large_image">
 <meta name="twitter:title" content="Areez Mahmood — Full-Stack & Mobile App Developer">
 <meta name="twitter:description" content="MERN • TypeScript • React Native • AWS Lambda • PostgreSQL • Stripe/PayPal • AI features. Available for hire.">
-<meta name="twitter:image" content="https://avatars.githubusercontent.com/u/112122254?v=4">
-<link rel="icon" href="https://avatars.githubusercontent.com/u/112122254?v=4">
+<meta name="twitter:image" content="https://d2ol7oe51mr4n9.cloudfront.net/user_3GdJHipBDERUWGlV6XVFQQ1UwUh/7e0f542d-3285-452e-9f74-e53741802103.jpg">
+<link rel="icon" href="https://d2ol7oe51mr4n9.cloudfront.net/user_3GdJHipBDERUWGlV6XVFQQ1UwUh/7e0f542d-3285-452e-9f74-e53741802103.jpg">
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
@@ -25,7 +26,7 @@
   "name": "Areez Mahmood",
   "jobTitle": "Full-Stack & Mobile App Developer",
   "description": "Freelance full-stack and mobile app developer with 5+ years of experience. Specializes in MERN stack, TypeScript, React Native, AWS Lambda, PostgreSQL, Stripe and PayPal payment integrations, and AI-powered features.",
-  "image": "https://avatars.githubusercontent.com/u/112122254?v=4",
+  "image": "https://d2ol7oe51mr4n9.cloudfront.net/user_3GdJHipBDERUWGlV6XVFQQ1UwUh/7e0f542d-3285-452e-9f74-e53741802103.jpg",
   "email": "mailto:areezmahmood7@gmail.com",
   "url": "https://areezmahmood.github.io/",
   "sameAs": [
@@ -43,143 +44,220 @@
 </script>
 <style>
 :root{
-  --bg:#0b0f19; --bg2:#111827; --card:#151d2e; --border:#233047;
-  --text:#e7ecf5; --muted:#93a1b8; --accent:#4f8cff; --accent2:#34d399;
-  --radius:14px;
+  --bg:#05070d; --bg2:#0a0e18; --card:#0d1322; --border:#1c2740;
+  --text:#e7ecf5; --muted:#8b9ab5; --green:#3dfc9d; --blue:#4f8cff; --purple:#a78bfa;
+  --mono:'SFMono-Regular',ui-monospace,'Cascadia Code','Fira Code',Consolas,monospace;
+  --radius:16px;
 }
 *{margin:0;padding:0;box-sizing:border-box}
 html{scroll-behavior:smooth}
-body{font-family:'Segoe UI',system-ui,-apple-system,sans-serif;background:var(--bg);color:var(--text);line-height:1.6}
-a{color:var(--accent);text-decoration:none}
-.container{max-width:1080px;margin:0 auto;padding:0 24px}
-nav{position:sticky;top:0;background:rgba(11,15,25,.85);backdrop-filter:blur(10px);border-bottom:1px solid var(--border);z-index:10}
-nav .container{display:flex;align-items:center;justify-content:space-between;height:64px}
-nav .logo{font-weight:700;font-size:1.1rem;color:var(--text)}
-nav .logo span{color:var(--accent)}
-nav ul{display:flex;gap:22px;list-style:none}
-nav ul a{color:var(--muted);font-size:.95rem}
+body{font-family:'Segoe UI',system-ui,-apple-system,sans-serif;background:var(--bg);color:var(--text);line-height:1.6;overflow-x:hidden;cursor:default}
+a{color:var(--blue);text-decoration:none}
+::selection{background:rgba(61,252,157,.25)}
+#grid-canvas{position:fixed;inset:0;z-index:0;opacity:.55;pointer-events:none}
+#cursor-glow{position:fixed;width:500px;height:500px;border-radius:50%;pointer-events:none;z-index:1;
+  background:radial-gradient(circle,rgba(79,140,255,.09) 0%,rgba(61,252,157,.04) 40%,transparent 70%);
+  transform:translate(-50%,-50%);transition:opacity .3s}
+.wrap{position:relative;z-index:2}
+.container{max-width:1120px;margin:0 auto;padding:0 24px}
+/* NAV */
+nav{position:sticky;top:0;background:rgba(5,7,13,.72);backdrop-filter:blur(14px);border-bottom:1px solid var(--border);z-index:50}
+nav .container{display:flex;align-items:center;justify-content:space-between;height:66px}
+nav .logo{font-family:var(--mono);font-weight:700;font-size:1.05rem;color:var(--text)}
+nav .logo .prompt{color:var(--green)}
+nav ul{display:flex;gap:26px;list-style:none}
+nav ul a{color:var(--muted);font-size:.92rem;font-family:var(--mono);position:relative;transition:color .2s}
+nav ul a::before{content:'./'; color:var(--green);opacity:0;transition:opacity .2s;position:absolute;left:-16px}
 nav ul a:hover{color:var(--text)}
-.btn{display:inline-block;padding:12px 26px;border-radius:10px;font-weight:600;transition:.2s;border:1px solid transparent}
-.btn-primary{background:var(--accent);color:#fff}
-.btn-primary:hover{filter:brightness(1.15)}
-.btn-outline{border-color:var(--border);color:var(--text)}
-.btn-outline:hover{border-color:var(--accent);color:var(--accent)}
-.hero{padding:90px 0 70px;display:flex;align-items:center;gap:48px;flex-wrap:wrap}
-.hero img{width:180px;height:180px;border-radius:50%;border:4px solid var(--accent);object-fit:cover}
-.hero .tag{color:var(--accent2);font-weight:600;letter-spacing:.12em;text-transform:uppercase;font-size:.8rem}
-.hero h1{font-size:2.7rem;line-height:1.15;margin:10px 0 14px}
-.hero h1 em{font-style:normal;color:var(--accent)}
-.hero p{color:var(--muted);max-width:560px;font-size:1.08rem}
-.hero .cta{margin-top:26px;display:flex;gap:14px;flex-wrap:wrap}
-.socials{margin-top:22px;display:flex;gap:16px}
-.socials a{color:var(--muted);font-size:.95rem;display:flex;align-items:center;gap:6px}
-.socials a:hover{color:var(--text)}
+nav ul a:hover::before{opacity:1}
+/* BUTTONS */
+.btn{display:inline-block;padding:13px 28px;border-radius:12px;font-weight:600;transition:transform .25s cubic-bezier(.34,1.56,.64,1),box-shadow .25s,background .25s;border:1px solid transparent;position:relative;overflow:hidden}
+.btn-primary{background:linear-gradient(135deg,var(--blue),#3b6fe0);color:#fff;box-shadow:0 4px 24px rgba(79,140,255,.35)}
+.btn-primary:hover{transform:translateY(-3px) scale(1.03);box-shadow:0 8px 32px rgba(79,140,255,.55)}
+.btn-green{background:linear-gradient(135deg,var(--green),#19c97a);color:#03140b;box-shadow:0 4px 24px rgba(61,252,157,.25)}
+.btn-green:hover{transform:translateY(-3px) scale(1.03);box-shadow:0 8px 34px rgba(61,252,157,.45)}
+.btn-outline{border-color:var(--border);color:var(--text);background:rgba(13,19,34,.6)}
+.btn-outline:hover{border-color:var(--green);color:var(--green);transform:translateY(-3px)}
+/* HERO */
+.hero{padding:100px 0 80px;display:flex;align-items:center;gap:60px;flex-wrap:wrap}
+.avatar-ring{position:relative;flex-shrink:0}
+.avatar-ring img{width:210px;height:210px;border-radius:50%;object-fit:cover;object-position:60% 20%;border:3px solid var(--bg);position:relative;z-index:2;display:block}
+.avatar-ring::before{content:'';position:absolute;inset:-6px;border-radius:50%;background:conic-gradient(var(--green),var(--blue),var(--purple),var(--green));animation:spin 6s linear infinite;z-index:1}
+.avatar-ring::after{content:'';position:absolute;inset:-14px;border-radius:50%;border:1px dashed rgba(79,140,255,.35);animation:spin 24s linear infinite reverse;z-index:0}
+@keyframes spin{to{transform:rotate(360deg)}}
+.terminal{background:#0a0f1c;border:1px solid var(--border);border-radius:12px;font-family:var(--mono);font-size:.92rem;margin-bottom:22px;max-width:560px;box-shadow:0 16px 48px rgba(0,0,0,.5)}
+.terminal-bar{display:flex;gap:7px;padding:11px 14px;border-bottom:1px solid var(--border)}
+.terminal-bar span{width:12px;height:12px;border-radius:50%}
+.terminal-bar span:nth-child(1){background:#ff5f57}.terminal-bar span:nth-child(2){background:#febc2e}.terminal-bar span:nth-child(3){background:#28c840}
+.terminal-body{padding:16px 18px;min-height:86px}
+.terminal-body .line{color:var(--muted)}
+.terminal-body .prompt{color:var(--green)}
+.terminal-body .out{color:var(--text)}
+.caret{display:inline-block;width:9px;height:1.1em;background:var(--green);vertical-align:text-bottom;animation:blink 1s steps(1) infinite}
+@keyframes blink{50%{opacity:0}}
+.hero h1{font-size:3rem;line-height:1.12;margin:6px 0 16px;letter-spacing:-.02em}
+.hero h1 .grad{background:linear-gradient(90deg,var(--green),var(--blue),var(--purple));-webkit-background-clip:text;background-clip:text;color:transparent}
+.hero p.sub{color:var(--muted);max-width:600px;font-size:1.1rem}
+.cta{margin-top:30px;display:flex;gap:14px;flex-wrap:wrap}
+.socials{margin-top:26px;display:flex;gap:18px}
+.socials a{color:var(--muted);font-size:.92rem;display:flex;align-items:center;gap:7px;font-family:var(--mono);transition:color .2s,transform .2s}
+.socials a:hover{color:var(--green);transform:translateY(-2px)}
 .socials svg{width:20px;height:20px;fill:currentColor}
-section{padding:70px 0}
-section h2{font-size:1.9rem;margin-bottom:8px}
-section .sub{color:var(--muted);margin-bottom:36px}
-.grid{display:grid;gap:20px}
-.grid-3{grid-template-columns:repeat(auto-fit,minmax(280px,1fr))}
-.card{background:var(--card);border:1px solid var(--border);border-radius:var(--radius);padding:26px;transition:.2s}
-.card:hover{transform:translateY(-4px);border-color:var(--accent)}
-.card h3{font-size:1.15rem;margin-bottom:10px}
+.stats{display:flex;gap:44px;flex-wrap:wrap;margin-top:38px}
+.stats div strong{display:block;font-size:2rem;font-family:var(--mono);color:var(--green)}
+.stats div span{color:var(--muted);font-size:.88rem}
+/* SECTIONS */
+section{padding:90px 0;position:relative}
+.sec-tag{font-family:var(--mono);color:var(--green);font-size:.9rem;margin-bottom:10px;display:block}
+section h2{font-size:2.2rem;margin-bottom:10px;letter-spacing:-.01em}
+section .sub{color:var(--muted);margin-bottom:44px;max-width:640px}
+.grid{display:grid;gap:24px}
+.grid-3{grid-template-columns:repeat(auto-fit,minmax(300px,1fr))}
+/* CARDS (3D tilt) */
+.card{background:linear-gradient(160deg,var(--card),#0a0f1d);border:1px solid var(--border);border-radius:var(--radius);padding:28px;transition:border-color .3s,box-shadow .3s;transform-style:preserve-3d;will-change:transform;position:relative}
+.card::after{content:'';position:absolute;inset:0;border-radius:var(--radius);background:radial-gradient(600px circle at var(--mx,50%) var(--my,50%),rgba(79,140,255,.08),transparent 40%);opacity:0;transition:opacity .3s;pointer-events:none}
+.card:hover{border-color:rgba(79,140,255,.6);box-shadow:0 18px 48px rgba(0,0,0,.45)}
+.card:hover::after{opacity:1}
+.card h3{font-size:1.18rem;margin-bottom:10px}
 .card p{color:var(--muted);font-size:.95rem}
-.card .link{display:inline-block;margin-top:16px;font-weight:600;font-size:.92rem}
-.badge{display:inline-block;background:rgba(79,140,255,.12);color:var(--accent);border:1px solid rgba(79,140,255,.35);padding:3px 12px;border-radius:999px;font-size:.78rem;margin:0 6px 8px 0}
-.skills .card{text-align:center}
-.skills .icon{font-size:2rem;margin-bottom:10px}
-.stats{display:flex;gap:40px;flex-wrap:wrap;margin-top:34px}
-.stats div strong{display:block;font-size:1.9rem;color:var(--accent)}
-.stats div span{color:var(--muted);font-size:.9rem}
-.gig-card{display:flex;flex-direction:column;overflow:hidden}
-.gig-card .gig-img{width:calc(100% + 52px);margin:-26px -26px 18px;display:block;aspect-ratio:16/10;object-fit:cover;border-bottom:1px solid var(--border)}
-.gig-card .price{color:var(--accent2);font-weight:700;margin-top:auto;padding-top:14px}
-.contact{background:var(--bg2);border-radius:var(--radius);padding:56px 40px;text-align:center;border:1px solid var(--border)}
-.contact h2{margin-bottom:12px}
-.contact p{color:var(--muted);max-width:520px;margin:0 auto 28px}
-footer{border-top:1px solid var(--border);padding:28px 0;text-align:center;color:var(--muted);font-size:.88rem}
-@media(max-width:640px){.hero{padding:56px 0 40px}.hero h1{font-size:2rem}nav ul{display:none}}
+.card .link{display:inline-block;margin-top:18px;font-weight:600;font-size:.92rem;font-family:var(--mono)}
+.card .link::after{content:' →';transition:margin-left .2s}
+.card .link:hover::after{margin-left:6px}
+.gig-card{display:flex;flex-direction:column;overflow:hidden;padding:0}
+.gig-card .gig-img{width:100%;display:block;aspect-ratio:16/10;object-fit:cover;border-bottom:1px solid var(--border);transition:transform .5s cubic-bezier(.22,1,.36,1);transform-origin:center}
+.gig-card:hover .gig-img{transform:scale(1.06)}
+.gig-card .body{padding:26px;display:flex;flex-direction:column;flex:1}
+/* SKILLS */
+.skills-band{background:var(--bg2);border-top:1px solid var(--border);border-bottom:1px solid var(--border)}
+.skill-card{text-align:left;display:flex;gap:16px;align-items:flex-start}
+.skill-card .icon{font-size:1.7rem;background:rgba(79,140,255,.1);border:1px solid var(--border);width:52px;height:52px;display:flex;align-items:center;justify-content:center;border-radius:13px;flex-shrink:0;transition:transform .3s}
+.skill-card:hover .icon{transform:rotate(-8deg) scale(1.12)}
+.badges{margin-top:34px;display:flex;flex-wrap:wrap;gap:10px}
+.badge{font-family:var(--mono);background:rgba(61,252,157,.07);color:var(--green);border:1px solid rgba(61,252,157,.25);padding:6px 15px;border-radius:999px;font-size:.8rem;transition:transform .2s,background .2s;cursor:default}
+.badge:hover{transform:translateY(-3px) scale(1.05);background:rgba(61,252,157,.16)}
+/* MARQUEE */
+.marquee{overflow:hidden;border-top:1px solid var(--border);border-bottom:1px solid var(--border);padding:16px 0;background:rgba(10,14,24,.6)}
+.marquee-track{display:flex;gap:48px;white-space:nowrap;font-family:var(--mono);color:var(--muted);font-size:.95rem;animation:scrollx 26s linear infinite;width:max-content}
+.marquee-track span b{color:var(--green);font-weight:400}
+@keyframes scrollx{to{transform:translateX(-50%)}}
+/* CONTACT */
+.contact-box{background:linear-gradient(150deg,#0c1424,#0a0f1c);border-radius:22px;padding:64px 44px;text-align:center;border:1px solid var(--border);position:relative;overflow:hidden}
+.contact-box::before{content:'';position:absolute;top:-120px;left:50%;transform:translateX(-50%);width:600px;height:240px;background:radial-gradient(ellipse,rgba(61,252,157,.13),transparent 70%)}
+.contact-box h2{margin-bottom:14px}
+.contact-box p{color:var(--muted);max-width:540px;margin:0 auto 30px}
+footer{border-top:1px solid var(--border);padding:30px 0;text-align:center;color:var(--muted);font-size:.88rem;font-family:var(--mono)}
+/* REVEAL */
+.reveal{opacity:0;transform:translateY(36px);transition:opacity .7s cubic-bezier(.22,1,.36,1),transform .7s cubic-bezier(.22,1,.36,1)}
+.reveal.on{opacity:1;transform:none}
+.reveal.d1{transition-delay:.08s}.reveal.d2{transition-delay:.16s}.reveal.d3{transition-delay:.24s}
+@media(max-width:720px){.hero{padding:60px 0 40px;gap:36px}.hero h1{font-size:2.1rem}nav ul{display:none}#cursor-glow{display:none}.stats{gap:26px}}
 </style>
 </head>
 <body>
+<canvas id="grid-canvas"></canvas>
+<div id="cursor-glow"></div>
+<div class="wrap">
 
 <nav>
   <div class="container">
-    <div class="logo">Areez<span>.dev</span></div>
+    <div class="logo"><span class="prompt">areez@dev</span>:~$ <span class="caret" style="height:.95em"></span></div>
     <ul>
-      <li><a href="#services">Services</a></li>
-      <li><a href="#skills">Expertise</a></li>
-      <li><a href="#work">Work</a></li>
-      <li><a href="#contact">Contact</a></li>
+      <li><a href="#services">services</a></li>
+      <li><a href="#skills">stack</a></li>
+      <li><a href="#work">work</a></li>
+      <li><a href="#contact">contact</a></li>
     </ul>
-    <a class="btn btn-primary" href="https://www.fiverr.com/areezmahmood" target="_blank" rel="noopener">Hire Me on Fiverr</a>
+    <a class="btn btn-green" href="https://www.fiverr.com/areezmahmood" target="_blank" rel="noopener">Hire Me on Fiverr</a>
   </div>
 </nav>
 
 <header class="hero container">
-  <img src="https://d2ol7oe51mr4n9.cloudfront.net/user_3GdJHipBDERUWGlV6XVFQQ1UwUh/7e0f542d-3285-452e-9f74-e53741802103.jpg" alt="Areez Mahmood — Full-Stack and Mobile App Developer">
-  <div>
-    <div class="tag">Full-Stack &amp; Mobile App Developer</div>
-    <h1>Hi, I'm <em>Areez Mahmood</em>.<br>I turn ideas into products people actually use.</h1>
-    <p>5+ years of experience shipping SaaS platforms, iOS &amp; Android apps, and payment systems. I work across the MERN stack, TypeScript, React Native, AWS Lambda and PostgreSQL — one developer for your entire product, from MVP to production.</p>
+  <div class="avatar-ring reveal on">
+    <img src="https://d2ol7oe51mr4n9.cloudfront.net/user_3GdJHipBDERUWGlV6XVFQQ1UwUh/7e0f542d-3285-452e-9f74-e53741802103.jpg" alt="Areez Mahmood — Full-Stack and Mobile App Developer">
+  </div>
+  <div style="flex:1;min-width:300px">
+    <div class="terminal reveal on">
+      <div class="terminal-bar"><span></span><span></span><span></span></div>
+      <div class="terminal-body">
+        <div class="line"><span class="prompt">areez@dev:~$</span> <span id="type-cmd"></span><span class="caret" id="cmd-caret"></span></div>
+        <div class="out" id="type-out"></div>
+      </div>
+    </div>
+    <h1>I turn ideas into <span class="grad">products people actually use</span>.</h1>
+    <p class="sub">Full-stack &amp; mobile developer — 5+ years shipping SaaS platforms, iOS &amp; Android apps, and payment systems. MERN, TypeScript, React Native, AWS Lambda, PostgreSQL. One developer for your entire product, from MVP to production.</p>
     <div class="cta">
       <a class="btn btn-primary" href="https://www.fiverr.com/areezmahmood" target="_blank" rel="noopener">Start a Project</a>
       <a class="btn btn-outline" href="#work">See My Work</a>
     </div>
     <div class="socials">
-      <a href="https://github.com/areezmahmood" target="_blank" rel="noopener"><svg viewBox="0 0 24 24"><path d="M12 .5C5.65.5.5 5.65.5 12c0 5.08 3.29 9.39 7.86 10.91.58.11.79-.25.79-.56 0-.28-.01-1.02-.02-2-3.2.7-3.88-1.54-3.88-1.54-.52-1.33-1.28-1.68-1.28-1.68-1.04-.71.08-.7.08-.7 1.15.08 1.76 1.19 1.76 1.19 1.03 1.75 2.69 1.25 3.34.95.1-.74.4-1.25.72-1.54-2.55-.29-5.23-1.28-5.23-5.68 0-1.26.45-2.29 1.19-3.09-.12-.29-.52-1.46.11-3.05 0 0 .97-.31 3.17 1.18a11 11 0 0 1 5.77 0c2.2-1.49 3.16-1.18 3.16-1.18.63 1.59.24 2.76.12 3.05.74.8 1.18 1.83 1.18 3.09 0 4.41-2.69 5.38-5.25 5.67.41.35.78 1.05.78 2.12 0 1.53-.01 2.76-.01 3.14 0 .31.2.68.8.56A10.52 10.52 0 0 0 23.5 12C23.5 5.65 18.35.5 12 .5z"/></svg> GitHub</a>
-      <a href="https://www.linkedin.com/in/areez-mahmood/" target="_blank" rel="noopener"><svg viewBox="0 0 24 24"><path d="M20.45 20.45h-3.55v-5.57c0-1.33-.03-3.04-1.85-3.04-1.86 0-2.14 1.45-2.14 2.94v5.67H9.35V9h3.41v1.56h.05c.48-.9 1.64-1.85 3.37-1.85 3.6 0 4.27 2.37 4.27 5.46v6.28zM5.34 7.43a2.06 2.06 0 1 1 0-4.12 2.06 2.06 0 0 1 0 4.12zM7.12 20.45H3.56V9h3.56v11.45z"/></svg> LinkedIn</a>
-      <a href="https://www.fiverr.com/areezmahmood" target="_blank" rel="noopener"><svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="11" fill="none" stroke="currentColor" stroke-width="2"/><text x="12" y="16.5" font-size="12" font-weight="bold" text-anchor="middle" fill="currentColor" stroke="none">fi</text></svg> Fiverr</a>
-      <a href="mailto:areezmahmood7@gmail.com"><svg viewBox="0 0 24 24"><path d="M20 4H4a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2V6a2 2 0 0 0-2-2zm0 4-8 5-8-5V6l8 5 8-5v2z"/></svg> Email</a>
+      <a href="https://github.com/areezmahmood" target="_blank" rel="noopener"><svg viewBox="0 0 24 24"><path d="M12 .5C5.65.5.5 5.65.5 12c0 5.08 3.29 9.39 7.86 10.91.58.11.79-.25.79-.56 0-.28-.01-1.02-.02-2-3.2.7-3.88-1.54-3.88-1.54-.52-1.33-1.28-1.68-1.28-1.68-1.04-.71.08-.7.08-.7 1.15.08 1.76 1.19 1.76 1.19 1.03 1.75 2.69 1.25 3.34.95.1-.74.4-1.25.72-1.54-2.55-.29-5.23-1.28-5.23-5.68 0-1.26.45-2.29 1.19-3.09-.12-.29-.52-1.46.11-3.05 0 0 .97-.31 3.17 1.18a11 11 0 0 1 5.77 0c2.2-1.49 3.16-1.18 3.16-1.18.63 1.59.24 2.76.12 3.05.74.8 1.18 1.83 1.18 3.09 0 4.41-2.69 5.38-5.25 5.67.41.35.78 1.05.78 2.12 0 1.53-.01 2.76-.01 3.14 0 .31.2.68.8.56A10.52 10.52 0 0 0 23.5 12C23.5 5.65 18.35.5 12 .5z"/></svg>github</a>
+      <a href="https://www.linkedin.com/in/areez-mahmood/" target="_blank" rel="noopener"><svg viewBox="0 0 24 24"><path d="M20.45 20.45h-3.55v-5.57c0-1.33-.03-3.04-1.85-3.04-1.86 0-2.14 1.45-2.14 2.94v5.67H9.35V9h3.41v1.56h.05c.48-.9 1.64-1.85 3.37-1.85 3.6 0 4.27 2.37 4.27 5.46v6.28zM5.34 7.43a2.06 2.06 0 1 1 0-4.12 2.06 2.06 0 0 1 0 4.12zM7.12 20.45H3.56V9h3.56v11.45z"/></svg>linkedin</a>
+      <a href="https://www.fiverr.com/areezmahmood" target="_blank" rel="noopener"><svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="11" fill="none" stroke="currentColor" stroke-width="2"/><text x="12" y="16.5" font-size="12" font-weight="bold" text-anchor="middle" fill="currentColor" stroke="none">fi</text></svg>fiverr</a>
+      <a href="mailto:areezmahmood7@gmail.com"><svg viewBox="0 0 24 24"><path d="M20 4H4a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2V6a2 2 0 0 0-2-2zm0 4-8 5-8-5V6l8 5 8-5v2z"/></svg>email</a>
     </div>
     <div class="stats">
-      <div><strong>5+</strong><span>Years experience</span></div>
-      <div><strong>5.0 ★</strong><span>Fiverr rating</span></div>
-      <div><strong>Full-cycle</strong><span>MVP → Production</span></div>
+      <div><strong data-count="5" data-suffix="+">0</strong><span>Years experience</span></div>
+      <div><strong data-count="5" data-suffix=".0 ★">0</strong><span>Fiverr rating</span></div>
+      <div><strong style="font-size:1.5rem;padding-top:6px">MVP→PROD</strong><span>Full product cycle</span></div>
     </div>
   </div>
 </header>
 
+<div class="marquee" aria-hidden="true">
+  <div class="marquee-track">
+    <span><b>const</b> stack = [ React, Node.js, TypeScript, ReactNative, MongoDB, PostgreSQL, AWS·Lambda, Stripe, PayPal, Express, JWT, AI ]&nbsp;&nbsp;//&nbsp;&nbsp;</span>
+    <span><b>const</b> stack = [ React, Node.js, TypeScript, ReactNative, MongoDB, PostgreSQL, AWS·Lambda, Stripe, PayPal, Express, JWT, AI ]&nbsp;&nbsp;//&nbsp;&nbsp;</span>
+  </div>
+</div>
+
 <section id="services">
   <div class="container">
-    <h2>What I Can Build For You</h2>
-    <p class="sub">Three focused services, available directly on Fiverr — or message me for a custom scope.</p>
+    <span class="sec-tag reveal">$ ls ./services</span>
+    <h2 class="reveal">What I Can Build For You</h2>
+    <p class="sub reveal">Three focused services, available directly on Fiverr — or message me for a custom scope.</p>
     <div class="grid grid-3">
-      <div class="card gig-card">
+      <div class="card gig-card tilt reveal">
         <img class="gig-img" src="https://fiverr-res.cloudinary.com/images/t_main1,q_auto,f_auto,q_auto,f_auto/gigs/498630940/original/16a082c9e4f32c6e3250be592bc8fa7b5842824d/build-a-full-stack-saas-web-app-with-react-and-node-js.png" alt="Full-stack SaaS web app development with React and Node.js — Fiverr gig by Areez Mahmood" loading="lazy">
-        <h3>🚀 Full-Stack SaaS Web App</h3>
-        <p>A production-ready SaaS platform with React frontend, Node.js/Express REST API, MongoDB or PostgreSQL, JWT auth with role-based access, and cloud deployment. Clean, documented, source-included code — from working MVP to multi-tenant platform.</p>
-        <a class="link" href="https://www.fiverr.com/areezmahmood/build-a-full-stack-saas-web-app-with-react-and-node-js" target="_blank" rel="noopener">View gig on Fiverr →</a>
+        <div class="body">
+          <h3>🚀 Full-Stack SaaS Web App</h3>
+          <p>A production-ready SaaS platform with React frontend, Node.js/Express REST API, MongoDB or PostgreSQL, JWT auth with role-based access, and cloud deployment. Clean, documented, source-included code — from working MVP to multi-tenant platform.</p>
+          <a class="link" href="https://www.fiverr.com/areezmahmood/build-a-full-stack-saas-web-app-with-react-and-node-js" target="_blank" rel="noopener">View gig on Fiverr</a>
+        </div>
       </div>
-      <div class="card gig-card">
+      <div class="card gig-card tilt reveal d1">
         <img class="gig-img" src="https://fiverr-res.cloudinary.com/videos/so_0.0,t_main1,q_auto,f_auto/x3pqsgzj9oy1hlxa2loi/develop-mobile-app-for-android-ios-web-app-and-iphone.png" alt="React Native mobile app development for iOS and Android — Fiverr gig by Areez Mahmood" loading="lazy">
-        <h3>📱 React Native Mobile App</h3>
-        <p>iOS and Android apps from a single codebase with offline sync, push notifications, and native performance. One codebase, both stores — pairs perfectly with a Node.js backend for a complete product.</p>
-        <a class="link" href="https://www.fiverr.com/areezmahmood/develop-mobile-app-for-android-ios-web-app-and-iphone" target="_blank" rel="noopener">View gig on Fiverr →</a>
+        <div class="body">
+          <h3>📱 React Native Mobile App</h3>
+          <p>iOS and Android apps from a single codebase with offline sync, push notifications, and native performance. One codebase, both stores — pairs perfectly with a Node.js backend for a complete product.</p>
+          <a class="link" href="https://www.fiverr.com/areezmahmood/develop-mobile-app-for-android-ios-web-app-and-iphone" target="_blank" rel="noopener">View gig on Fiverr</a>
+        </div>
       </div>
-      <div class="card gig-card">
+      <div class="card gig-card tilt reveal d2">
         <img class="gig-img" src="https://fiverr-res.cloudinary.com/images/t_main1,q_auto,f_auto,q_auto,f_auto/gigs/497071635/original/c3fbe82622c3bd35f2b3688525bc61458d084022/integrate-payments-escrow-and-ai-features-into-your-platform.png" alt="Stripe and PayPal payment, escrow and AI integration — Fiverr gig by Areez Mahmood" loading="lazy">
-        <h3>💳 Payments, Escrow &amp; AI Features</h3>
-        <p>Stripe and PayPal payment gateways, subscription billing, escrow flows, and AI-powered features integrated into your existing web or mobile platform — secure and production-tested.</p>
-        <a class="link" href="https://www.fiverr.com/areezmahmood/integrate-payments-escrow-and-ai-features-into-your-platform" target="_blank" rel="noopener">View gig on Fiverr →</a>
+        <div class="body">
+          <h3>💳 Payments, Escrow &amp; AI Features</h3>
+          <p>Stripe and PayPal payment gateways, subscription billing, escrow flows, and AI-powered features integrated into your existing web or mobile platform — secure and production-tested.</p>
+          <a class="link" href="https://www.fiverr.com/areezmahmood/integrate-payments-escrow-and-ai-features-into-your-platform" target="_blank" rel="noopener">View gig on Fiverr</a>
+        </div>
       </div>
     </div>
   </div>
 </section>
 
-<section id="skills" class="skills" style="background:var(--bg2)">
+<section id="skills" class="skills-band">
   <div class="container">
-    <h2>Tech Stack &amp; Expertise</h2>
-    <p class="sub">An all-rounder across frontend, backend, mobile, cloud, and payments.</p>
+    <span class="sec-tag reveal">$ cat ./stack.json</span>
+    <h2 class="reveal">Tech Stack &amp; Expertise</h2>
+    <p class="sub reveal">An all-rounder across frontend, backend, mobile, cloud, and payments.</p>
     <div class="grid grid-3">
-      <div class="card"><div class="icon">⚛️</div><h3>Frontend</h3><p>React, TypeScript, responsive UI, state management, modern tooling</p></div>
-      <div class="card"><div class="icon">🖥️</div><h3>Backend</h3><p>Node.js, Express, REST APIs, JWT auth, role-based access control</p></div>
-      <div class="card"><div class="icon">📱</div><h3>Mobile</h3><p>React Native for iOS &amp; Android, offline sync, push notifications</p></div>
-      <div class="card"><div class="icon">🗄️</div><h3>Databases</h3><p>MongoDB, PostgreSQL — schema design, optimization, migrations</p></div>
-      <div class="card"><div class="icon">☁️</div><h3>Cloud &amp; Serverless</h3><p>AWS Lambda, Vercel, Render — deployment, CI/CD, scaling</p></div>
-      <div class="card"><div class="icon">💳</div><h3>Payments &amp; AI</h3><p>Stripe, PayPal, subscription billing, escrow, AI-powered features</p></div>
+      <div class="card skill-card tilt reveal"><div class="icon">⚛️</div><div><h3>Frontend</h3><p>React, TypeScript, responsive UI, state management, modern tooling</p></div></div>
+      <div class="card skill-card tilt reveal d1"><div class="icon">🖥️</div><div><h3>Backend</h3><p>Node.js, Express, REST APIs, JWT auth, role-based access control</p></div></div>
+      <div class="card skill-card tilt reveal d2"><div class="icon">📱</div><div><h3>Mobile</h3><p>React Native for iOS &amp; Android, offline sync, push notifications</p></div></div>
+      <div class="card skill-card tilt reveal"><div class="icon">🗄️</div><div><h3>Databases</h3><p>MongoDB, PostgreSQL — schema design, optimization, migrations</p></div></div>
+      <div class="card skill-card tilt reveal d1"><div class="icon">☁️</div><div><h3>Cloud &amp; Serverless</h3><p>AWS Lambda, Vercel, Render — deployment, CI/CD, scaling</p></div></div>
+      <div class="card skill-card tilt reveal d2"><div class="icon">💳</div><div><h3>Payments &amp; AI</h3><p>Stripe, PayPal, subscription billing, escrow, AI-powered features</p></div></div>
     </div>
-    <div style="margin-top:28px">
+    <div class="badges reveal">
       <span class="badge">React</span><span class="badge">Node.js</span><span class="badge">TypeScript</span><span class="badge">React Native</span><span class="badge">MongoDB</span><span class="badge">PostgreSQL</span><span class="badge">Express</span><span class="badge">AWS Lambda</span><span class="badge">Stripe</span><span class="badge">PayPal</span><span class="badge">JWT Auth</span><span class="badge">AI Integration</span>
     </div>
   </div>
@@ -187,34 +265,37 @@ footer{border-top:1px solid var(--border);padding:28px 0;text-align:center;color
 
 <section id="work">
   <div class="container">
-    <h2>Selected Work &amp; Open Source</h2>
-    <p class="sub">Projects and tooling on GitHub, plus the kind of products I ship for clients.</p>
+    <span class="sec-tag reveal">$ git log --work</span>
+    <h2 class="reveal">Selected Work &amp; Open Source</h2>
+    <p class="sub reveal">Projects and tooling on GitHub, plus the kind of products I ship for clients.</p>
     <div class="grid grid-3">
-      <div class="card">
+      <div class="card tilt reveal">
         <h3>rn-boilerplate-starter</h3>
         <p>A powerful React Native boilerplate scaffolded with a single command — batteries-included architecture for shipping mobile apps fast. TypeScript.</p>
-        <a class="link" href="https://github.com/areezmahmood/rn-boilerplate-starter" target="_blank" rel="noopener">View on GitHub →</a>
+        <a class="link" href="https://github.com/areezmahmood/rn-boilerplate-starter" target="_blank" rel="noopener">View on GitHub</a>
       </div>
-      <div class="card">
+      <div class="card tilt reveal d1">
         <h3>DynamicTheme</h3>
         <p>Dynamic theming system for React Native apps — runtime theme switching with a clean, type-safe API. TypeScript.</p>
-        <a class="link" href="https://github.com/areezmahmood/DynamicTheme" target="_blank" rel="noopener">View on GitHub →</a>
+        <a class="link" href="https://github.com/areezmahmood/DynamicTheme" target="_blank" rel="noopener">View on GitHub</a>
       </div>
-      <div class="card">
+      <div class="card tilt reveal d2">
         <h3>boilerplate-react</h3>
         <p>Opinionated React starter with sensible defaults for structure, routing, and state — the foundation I use to kick off client web apps. TypeScript.</p>
-        <a class="link" href="https://github.com/areezmahmood/boilerplate-react" target="_blank" rel="noopener">View on GitHub →</a>
+        <a class="link" href="https://github.com/areezmahmood/boilerplate-react" target="_blank" rel="noopener">View on GitHub</a>
       </div>
-      <div class="card gig-card">
+      <div class="card gig-card tilt reveal">
         <img class="gig-img" src="https://fiverr-res.cloudinary.com/images/t_main1,q_auto,f_auto,q_auto,f_auto/gigs2/498630940/original/c20af6f5ae6507119ee02a23efad88d130c5e51f/build-a-full-stack-saas-web-app-with-react-and-node-js.png" alt="SaaS platform architecture example by Areez Mahmood" loading="lazy">
-        <h3>💼 SaaS Platforms</h3>
-        <p>Multi-tenant SaaS products with subscription billing, dashboards, and role-based access — taken from first wireframe to paying users.</p>
+        <div class="body">
+          <h3>💼 SaaS Platforms</h3>
+          <p>Multi-tenant SaaS products with subscription billing, dashboards, and role-based access — taken from first wireframe to paying users.</p>
+        </div>
       </div>
-      <div class="card">
+      <div class="card tilt reveal d1">
         <h3>💰 Payment Systems</h3>
         <p>Stripe &amp; PayPal integrations including marketplace escrow flows and recurring billing, built to production security standards.</p>
       </div>
-      <div class="card">
+      <div class="card tilt reveal d2">
         <h3>🤖 AI-Powered Features</h3>
         <p>LLM-backed features embedded into real products — chat assistants, smart automation, and AI-driven workflows.</p>
       </div>
@@ -224,10 +305,11 @@ footer{border-top:1px solid var(--border);padding:28px 0;text-align:center;color
 
 <section id="contact">
   <div class="container">
-    <div class="contact">
+    <div class="contact-box reveal">
+      <span class="sec-tag">$ ./start_project.sh</span>
       <h2>Let's Build Something Great Together</h2>
       <p>Have an idea, an MVP that needs finishing, or a platform that needs payments or AI? Message me — I reply fast, scope honestly, and deliver code you can actually launch.</p>
-      <a class="btn btn-primary" href="https://www.fiverr.com/areezmahmood" target="_blank" rel="noopener">Message Me on Fiverr</a>
+      <a class="btn btn-green" href="https://www.fiverr.com/areezmahmood" target="_blank" rel="noopener">Message Me on Fiverr</a>
       &nbsp;
       <a class="btn btn-outline" href="mailto:areezmahmood7@gmail.com">Email Me</a>
     </div>
@@ -236,12 +318,53 @@ footer{border-top:1px solid var(--border);padding:28px 0;text-align:center;color
 
 <footer>
   <div class="container">
-    © 2026 Areez Mahmood ·
-    <a href="https://www.fiverr.com/areezmahmood" target="_blank" rel="noopener">Fiverr</a> ·
-    <a href="https://github.com/areezmahmood" target="_blank" rel="noopener">GitHub</a> ·
-    <a href="https://www.linkedin.com/in/areez-mahmood/" target="_blank" rel="noopener">LinkedIn</a>
+    © 2026 Areez Mahmood · <a href="https://www.fiverr.com/areezmahmood" target="_blank" rel="noopener">fiverr</a> · <a href="https://github.com/areezmahmood" target="_blank" rel="noopener">github</a> · <a href="https://www.linkedin.com/in/areez-mahmood/" target="_blank" rel="noopener">linkedin</a>
   </div>
 </footer>
 
+</div>
+<script>
+// ---- animated grid background ----
+const cv=document.getElementById('grid-canvas'),cx=cv.getContext('2d');
+let W,H,t=0;const resize=()=>{W=cv.width=innerWidth;H=cv.height=innerHeight};resize();addEventListener('resize',resize);
+function drawGrid(){cx.clearRect(0,0,W,H);const s=46,ox=(t*.18)%s,oy=(t*.12)%s;
+cx.strokeStyle='rgba(38,54,90,.35)';cx.lineWidth=1;cx.beginPath();
+for(let x=-s+ox;x<W+s;x+=s){cx.moveTo(x,0);cx.lineTo(x,H)}
+for(let y=-s+oy;y<H+s;y+=s){cx.moveTo(0,y);cx.lineTo(W,y)}
+cx.stroke();
+// drifting glow nodes
+for(let i=0;i<14;i++){const px=(Math.sin(t*.004+i*2.4)*.5+.5)*W,py=(Math.cos(t*.003+i*1.7)*.5+.5)*H;
+const g=cx.createRadialGradient(px,py,0,px,py,60);g.addColorStop(0,'rgba(61,252,157,.10)');g.addColorStop(1,'transparent');
+cx.fillStyle=g;cx.fillRect(px-60,py-60,120,120)}
+t++;requestAnimationFrame(drawGrid)}drawGrid();
+// ---- cursor glow ----
+const glow=document.getElementById('cursor-glow');
+addEventListener('mousemove',e=>{glow.style.left=e.clientX+'px';glow.style.top=e.clientY+'px'});
+// ---- typing animation ----
+const cmds=[["whoami","Areez Mahmood — Full-Stack & Mobile App Developer"],
+["cat skills.txt","MERN · TypeScript · React Native · AWS Lambda · PostgreSQL"],
+["./deploy --production","✔ Build passed · ✔ Tests green · ✔ Shipped 🚀"],
+["grep -r 'clients' reviews.log","★★★★★  \"Delivered exactly what we needed.\""]];
+const cmdEl=document.getElementById('type-cmd'),outEl=document.getElementById('type-out');let ci=0;
+async function typeLoop(){const[c,o]=cmds[ci%cmds.length];cmdEl.textContent='';outEl.textContent='';
+for(let i=0;i<=c.length;i++){cmdEl.textContent=c.slice(0,i);await new Promise(r=>setTimeout(r,55))}
+await new Promise(r=>setTimeout(r,350));
+for(let i=0;i<=o.length;i++){outEl.textContent=o.slice(0,i);await new Promise(r=>setTimeout(r,16))}
+await new Promise(r=>setTimeout(r,2600));ci++;typeLoop()}typeLoop();
+// ---- scroll reveal ----
+const io=new IntersectionObserver(es=>es.forEach(e=>{if(e.isIntersecting){e.target.classList.add('on');io.unobserve(e.target)}}),{threshold:.12});
+document.querySelectorAll('.reveal').forEach(el=>io.observe(el));
+// ---- count-up stats ----
+const cio=new IntersectionObserver(es=>es.forEach(e=>{if(!e.isIntersecting)return;const el=e.target,n=+el.dataset.count,suf=el.dataset.suffix||'';let v=0;
+const iv=setInterval(()=>{v++;el.textContent=v+suf;if(v>=n)clearInterval(iv)},260);cio.unobserve(el)}),{threshold:.5});
+document.querySelectorAll('[data-count]').forEach(el=>cio.observe(el));
+// ---- 3D tilt + spotlight ----
+document.querySelectorAll('.tilt').forEach(card=>{
+card.addEventListener('mousemove',e=>{const r=card.getBoundingClientRect(),x=e.clientX-r.left,y=e.clientY-r.top;
+const rx=((y/r.height)-.5)*-7,ry=((x/r.width)-.5)*7;
+card.style.transform=`perspective(900px) rotateX(${rx}deg) rotateY(${ry}deg) translateY(-4px)`;
+card.style.setProperty('--mx',x+'px');card.style.setProperty('--my',y+'px')});
+card.addEventListener('mouseleave',()=>{card.style.transform=''})});
+</script>
 </body>
 </html>
